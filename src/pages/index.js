@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import { StaticImage } from 'gatsby-plugin-image';
+import Seo from '../components/Seo';
 
 const IndexPage = () => {
   return (
@@ -8,12 +9,12 @@ const IndexPage = () => {
       <p>I'm making this by following the Gatsby Tutorial.</p>
       <StaticImage
         alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
-        src="../images/testdog.jpg"
+        src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
       />
     </Layout>
   );
 };
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <Seo title="Home Page" />;
 
 export default IndexPage;
